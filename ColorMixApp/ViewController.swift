@@ -35,11 +35,10 @@ class ViewController: UIViewController {
     }
     
     private func updateColorMixView() {
-        let red = CGFloat(redSlider.value)
-        let green = CGFloat(greenSlider.value)
-        let blue = CGFloat(blueSlider.value)
-        
-        let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        let color = UIColor(red: CGFloat(redSlider.value),
+                            green: CGFloat(greenSlider.value),
+                            blue: CGFloat(blueSlider.value),
+                            alpha: 1)
         
         colorMixView.backgroundColor = color
     }
