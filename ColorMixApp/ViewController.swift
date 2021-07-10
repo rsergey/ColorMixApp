@@ -8,12 +8,45 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var colorMixView: UIView!
+    
+    @IBOutlet weak var redValueLabel: UILabel!
+    @IBOutlet weak var greenValueLabel: UILabel!
+    @IBOutlet weak var blueValueLabel: UILabel!
+    
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateColorMixView()
+        updateColorLabel()
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        colorMixView.layer.cornerRadius = colorMixView.bounds.height / 10
+    }
 
+    @IBAction func updateSlider() {
+        updateColorMixView()
+        updateColorLabel()
+    }
+    
+    private func updateColorMixView() {
+        let red = CGFloat(redSlider.value)
+        let green = CGFloat(greenSlider.value)
+        let blue = CGFloat(blueSlider.value)
+        
+        let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        
+        colorMixView.backgroundColor = color
+    }
+    
+    private func updateColorLabel() {
+        redValueLabel.text = String(round(redSlider.value * 100) / 100)
+        greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
+        blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+    }
 }
-
