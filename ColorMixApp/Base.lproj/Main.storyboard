@@ -53,11 +53,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Niw-Uf-UbA">
+                                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="red" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Niw-Uf-UbA">
                                                                 <rect key="frame" x="128" y="0.0" width="134" height="31"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                                 <connections>
-                                                                    <action selector="updateSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="IN2-kj-RIq"/>
+                                                                    <action selector="updateSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="NJB-Hh-59Z"/>
                                                                 </connections>
                                                             </slider>
                                                         </subviews>
@@ -83,11 +83,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-yZ-6YK">
+                                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="green" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-yZ-6YK">
                                                                 <rect key="frame" x="128" y="0.0" width="134" height="31"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                                 <connections>
-                                                                    <action selector="updateSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="MxR-6G-nDC"/>
+                                                                    <action selector="updateSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="SCP-R8-tLa"/>
                                                                 </connections>
                                                             </slider>
                                                         </subviews>
@@ -113,11 +113,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="feT-OJ-tcj">
+                                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="blue" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="feT-OJ-tcj">
                                                                 <rect key="frame" x="128" y="0.0" width="134" height="31"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                                 <connections>
-                                                                    <action selector="updateSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="QPW-Kn-YMi"/>
+                                                                    <action selector="updateSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="4CS-H4-E7d"/>
                                                                 </connections>
                                                             </slider>
                                                         </subviews>

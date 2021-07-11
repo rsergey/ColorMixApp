@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateColorLabel(sliderColor: "")
         updateColorMixView()
-        updateColorLabel()
     }
 
     override func viewWillLayoutSubviews() {
@@ -29,23 +29,30 @@ class ViewController: UIViewController {
         colorMixView.layer.cornerRadius = colorMixView.bounds.height / 10
     }
 
-    @IBAction func updateSlider() {
+    @IBAction func updateSlider(_ sender: UISlider) {
+        updateColorLabel(sliderColor: sender.restorationIdentifier ?? "")
         updateColorMixView()
-        updateColorLabel()
     }
     
     private func updateColorMixView() {
-        let color = UIColor(red: CGFloat(redSlider.value),
-                            green: CGFloat(greenSlider.value),
-                            blue: CGFloat(blueSlider.value),
-                            alpha: 1)
-        
-        colorMixView.backgroundColor = color
+        colorMixView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
+                                               green: CGFloat(greenSlider.value),
+                                               blue: CGFloat(blueSlider.value),
+                                               alpha: 1)
     }
     
-    private func updateColorLabel() {
-        redValueLabel.text = String(round(redSlider.value * 100) / 100)
-        greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
-        blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+    private func updateColorLabel(sliderColor: String) {
+        switch sliderColor {
+        case "red":
+            redValueLabel.text = String(round(redSlider.value * 100) / 100)
+        case "green":
+            greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
+        case "blue":
+            blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+        default:
+            redValueLabel.text = String(round(redSlider.value * 100) / 100)
+            greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
+            blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+        }
     }
 }
