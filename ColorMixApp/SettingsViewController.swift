@@ -19,11 +19,13 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    // MARK: - Public Properties
     var viewColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+    var delegate: SettingsViewControllerDelegate!
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationController?.setNavigationBarHidden(true, animated: false)
         colorMixView.layer.cornerRadius = 15
         
         updateSlidersValueFromUIColor(color: viewColor)
@@ -31,11 +33,20 @@ class SettingsViewController: UIViewController {
         updateColorMixView()
     }
 
+    // MARK: - IBActions
     @IBAction func updateSlider(_ sender: UISlider) {
         updateColorLabel(sliderColors: sender)
         updateColorMixView()
     }
     
+    @IBAction func doneButtonPressed() {
+        delegate.setNewColorValue(red: CGFloat(redSlider.value),
+                                  green: CGFloat(greenSlider.value),
+                                  blue: CGFloat(blueSlider.value))
+        dismiss(animated: true)
+    }
+    
+    // MARK: - Private Methods
     private func updateColorMixView() {
         colorMixView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
                                                green: CGFloat(greenSlider.value),
@@ -67,4 +78,5 @@ class SettingsViewController: UIViewController {
         greenSlider.value = Float(green)
         blueSlider.value = Float(blue)
     }
+    
 }
