@@ -20,17 +20,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateColorLabel(sliderColor: "")
+        colorMixView.layer.cornerRadius = 15
+        updateColorLabel(sliderColor: 0)
         updateColorMixView()
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        colorMixView.layer.cornerRadius = colorMixView.bounds.height / 10
-    }
-
     @IBAction func updateSlider(_ sender: UISlider) {
-        updateColorLabel(sliderColor: sender.restorationIdentifier ?? "")
+        updateColorLabel(sliderColor: sender.tag)
         updateColorMixView()
     }
     
@@ -41,18 +37,18 @@ class ViewController: UIViewController {
                                                alpha: 1)
     }
     
-    private func updateColorLabel(sliderColor: String) {
+    private func updateColorLabel(sliderColor: Int) {
         switch sliderColor {
-        case "red":
-            redValueLabel.text = String(round(redSlider.value * 100) / 100)
-        case "green":
-            greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
-        case "blue":
-            blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+        case 1:
+            redValueLabel.text = String(format: "%.2f", redSlider.value)
+        case 2:
+            greenValueLabel.text = String(format: "%.2f", greenSlider.value)
+        case 3:
+            blueValueLabel.text = String(format: "%.2f", blueSlider.value)
         default:
-            redValueLabel.text = String(round(redSlider.value * 100) / 100)
-            greenValueLabel.text = String(round(greenSlider.value * 100) / 100)
-            blueValueLabel.text = String(round(blueSlider.value * 100) / 100)
+            redValueLabel.text = String(format: "%.2f", redSlider.value)
+            greenValueLabel.text = String(format: "%.2f", greenSlider.value)
+            blueValueLabel.text = String(format: "%.2f", blueSlider.value)
         }
     }
 }
