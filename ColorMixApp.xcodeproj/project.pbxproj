@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A54A887026983B9800B10277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54A886F26983B9800B10277 /* AppDelegate.swift */; };
 		A54A887226983B9800B10277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54A887126983B9800B10277 /* SceneDelegate.swift */; };
-		A54A887426983B9800B10277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54A887326983B9800B10277 /* ViewController.swift */; };
+		A54A887426983B9800B10277 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54A887326983B9800B10277 /* SettingsViewController.swift */; };
 		A54A887726983B9800B10277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54A887526983B9800B10277 /* Main.storyboard */; };
 		A54A887926983B9900B10277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54A887826983B9900B10277 /* Assets.xcassets */; };
 		A54A887C26983B9900B10277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54A887A26983B9900B10277 /* LaunchScreen.storyboard */; };
+		A5D6794726AC3AD900429A94 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6794626AC3AD900429A94 /* PresentationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A54A886C26983B9800B10277 /* ColorMixApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMixApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54A886F26983B9800B10277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54A887126983B9800B10277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A54A887326983B9800B10277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A54A887326983B9800B10277 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A54A887626983B9800B10277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A54A887826983B9900B10277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54A887B26983B9900B10277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A54A887D26983B9900B10277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D6794626AC3AD900429A94 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				A54A886F26983B9800B10277 /* AppDelegate.swift */,
 				A54A887126983B9800B10277 /* SceneDelegate.swift */,
-				A54A887326983B9800B10277 /* ViewController.swift */,
+				A54A887326983B9800B10277 /* SettingsViewController.swift */,
 				A54A887526983B9800B10277 /* Main.storyboard */,
 				A54A887826983B9900B10277 /* Assets.xcassets */,
 				A54A887A26983B9900B10277 /* LaunchScreen.storyboard */,
 				A54A887D26983B9900B10277 /* Info.plist */,
+				A5D6794626AC3AD900429A94 /* PresentationViewController.swift */,
 			);
 			path = ColorMixApp;
 			sourceTree = "<group>";
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54A887426983B9800B10277 /* ViewController.swift in Sources */,
+				A5D6794726AC3AD900429A94 /* PresentationViewController.swift in Sources */,
+				A54A887426983B9800B10277 /* SettingsViewController.swift in Sources */,
 				A54A887026983B9800B10277 /* AppDelegate.swift in Sources */,
 				A54A887226983B9800B10277 /* SceneDelegate.swift in Sources */,
 			);
