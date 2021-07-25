@@ -58,16 +58,48 @@
 		A54A886E26983B9800B10277 /* ColorMixApp */ = {
 			isa = PBXGroup;
 			children = (
-				A54A886F26983B9800B10277 /* AppDelegate.swift */,
-				A54A887126983B9800B10277 /* SceneDelegate.swift */,
-				A54A887326983B9800B10277 /* SettingsViewController.swift */,
-				A54A887526983B9800B10277 /* Main.storyboard */,
-				A54A887826983B9900B10277 /* Assets.xcassets */,
-				A54A887A26983B9900B10277 /* LaunchScreen.storyboard */,
-				A54A887D26983B9900B10277 /* Info.plist */,
-				A5D6794626AC3AD900429A94 /* PresentationViewController.swift */,
+				A5A4A03D26ADF12400FD57F3 /* SupportFiles */,
+				A5A4A03A26ADF0AA00FD57F3 /* ViewControllers */,
+				A5A4A03C26ADF0FC00FD57F3 /* Storyboards */,
+				A5A4A03926ADF06700FD57F3 /* Resources */,
 			);
 			path = ColorMixApp;
+			sourceTree = "<group>";
+		};
+		A5A4A03926ADF06700FD57F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A54A887826983B9900B10277 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5A4A03A26ADF0AA00FD57F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A54A887326983B9800B10277 /* SettingsViewController.swift */,
+				A5D6794626AC3AD900429A94 /* PresentationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5A4A03C26ADF0FC00FD57F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A54A887526983B9800B10277 /* Main.storyboard */,
+				A54A887A26983B9900B10277 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5A4A03D26ADF12400FD57F3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A54A886F26983B9800B10277 /* AppDelegate.swift */,
+				A54A887126983B9800B10277 /* SceneDelegate.swift */,
+				A54A887D26983B9900B10277 /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33JK998GP5;
-				INFOPLIST_FILE = ColorMixApp/Info.plist;
+				INFOPLIST_FILE = ColorMixApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33JK998GP5;
-				INFOPLIST_FILE = ColorMixApp/Info.plist;
+				INFOPLIST_FILE = ColorMixApp/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
